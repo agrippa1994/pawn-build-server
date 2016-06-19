@@ -101,10 +101,8 @@ app.get("*", (req, res) => {
         }
     };
     
-	console.log("asdf");
-    var fileName = req.params["0"];
+    const fileName = req.params["0"];
     res.sendFile(fileName, options, (error) => {
-
 		if(error) {
 			res.status(error.status || 500).end();
 		}
