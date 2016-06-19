@@ -1,0 +1,6 @@
+{
+    "port": 3000,
+    "gamemode": "rivershell",
+    "deployPath": "./latest/",
+    "secret": "asdf"
+}

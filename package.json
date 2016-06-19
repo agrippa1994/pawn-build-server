@@ -22,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/agrippa1994/pawn-build-server/issues"
   },
-  "homepage": "https://github.com/agrippa1994/pawn-build-server#readme"
+  "homepage": "https://github.com/agrippa1994/pawn-build-server#readme",
+  "dependencies": {
+    "body-parser": "^1.15.1",
+    "express": "^4.14.0",
+    "express-x-hub": "^1.0.4",
+    "node-uuid": "^1.4.7",
+    "simple-git": "^1.37.0"
+  }
 }
