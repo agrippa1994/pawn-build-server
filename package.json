@@ -1,0 +1,26 @@
+{
+  "name": "pawn-build-server",
+  "version": "1.0.0",
+  "description": "Build server for pawn",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agrippa1994/pawn-build-server.git"
+  },
+  "keywords": [
+    "pawn",
+    "server",
+    "build",
+    "http",
+    "https"
+  ],
+  "author": "Manuel Leitold",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/agrippa1994/pawn-build-server/issues"
+  },
+  "homepage": "https://github.com/agrippa1994/pawn-build-server#readme"
+}
