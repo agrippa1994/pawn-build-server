@@ -53,14 +53,10 @@ app.post("/", (req, res) => {
 			const deployPath = config.deployPath;
 
 			const pawnCompileHandler = (code, stdout, stderr) => {
-				var status = 200;
-				if(code == 0) {
+				if(code == 0)
 					console.log("Compilation success!");
-				}
-				else {
+				else 
 					console.log("Compilation failed: " + stderr);
-					status = 400;
-				}
 
 				const data = { 
 					author: author,
@@ -72,7 +68,7 @@ app.post("/", (req, res) => {
 				};
 
 				db.build.create(data);
-				res.json(data, status);
+				res.json(data);
 			};
 
 			pawn(gameModeFolder, gameModeName, includeFolder, deployPath, pawnCompileHandler);
