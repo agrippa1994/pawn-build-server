@@ -14,7 +14,7 @@ function pawn(scriptPath, scriptName, includePath, deployPath, callback) {
 
 	var proc;
 	if(os.platform() == "linux") {
-		const env = { LD_LIBRARY_PATH: `${__dirname}/pawn/linux`};
+		const env = { LD_LIBRARY_PATH: `${__dirname}/pawn/linux/${os.arch()}/`};
 		proc = spawn(`${__dirname}/pawn/linux/${os.arch()}/pawncc`, args, { env: env });
 	} else if(os.platform() == "win32") {
 		proc = spawn(`${__dirname}/pawn/win32/pawncc`, args);
